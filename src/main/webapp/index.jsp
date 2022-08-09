@@ -348,8 +348,8 @@
                 console.log(field);
 
                 html += `<div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="${field}">
-                    <img src="${field}" class="img-responsive" alt="Image 1">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="\${field}">
+                    <img src="\${field}" class="img-responsive" alt="Image 1">
                     <div class="gallery-box-caption">
                     <div class="gallery-box-content">
                     <div>

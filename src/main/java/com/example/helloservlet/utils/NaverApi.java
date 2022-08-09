@@ -26,10 +26,14 @@ public class NaverApi {
 //                System.out.println(e.attr("title"));
 //                System.out.println(e.attr("href"));
                 String code = e.attr("href");
-                String[] codeArr = code.split("=");
+                String [] codeArr = code.split("=");
 //                System.out.println("https://movie.naver.com/movie/bi/mi/photoViewPopup.naver?movieCode=" + codeArr[1]);
+                URL = "https://movie.naver.com/movie/bi/mi/photoViewPopup.naver?movieCode=" + codeArr[1];
+                doc = Jsoup.connect(URL).get();
+                Elements img = doc.select("#targetImage");
+
                 if (i >= 9) break;
-                list.add("https://movie.naver.com/movie/bi/mi/photoViewPopup.naver?movieCode=" + codeArr[1]);
+                list.add(img.attr("src"));
                 i++;
             }
 

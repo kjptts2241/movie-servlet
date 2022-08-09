@@ -23,6 +23,7 @@ public class MovieServlet extends HttpServlet {
         Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         String json = gson.toJson(movieList);
         System.out.println(json);
+
         response.setContentType("application/json; charset=UTF-8");
         response.setCharacterEncoding("UTF-8");
         PrintWriter out = response.getWriter();
