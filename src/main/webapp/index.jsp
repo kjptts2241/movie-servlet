@@ -293,7 +293,7 @@
         <div class="modal-content">
             <div class="modal-body">
                 <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
-                <p> 한산: 용의 출현
+                <p>
                     <br/>
                     <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
                 </p>
@@ -348,17 +348,17 @@
                 console.log(field);
 
                 html += `<div class="col-lg-4 col-sm-6">
-                    <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="\${field}">
-                    <img src="\${field}" class="img-responsive" alt="Image 1">
-                    <div class="gallery-box-caption">
-                    <div class="gallery-box-content">
-                    <div>
-                    <i class="icon-lg ion-ios-search"></i>
-            </div>
-            </div>
-            </div>
-            </a>
-            </div>`;
+                            <a href="#galleryModal" class="gallery-box" data-toggle="modal" data-src="\${field}">
+                            <img src="\${field}" class="img-responsive" alt="Image 1">
+                            <div class="gallery-box-caption">
+                                <div class="gallery-box-content">
+                                    <div>
+                                        <i class="icon-lg ion-ios-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            </a>
+                         </div>`;
 
                 // var html = "<a href='" + field.link + "'>" + field.title + "<br>"
             });
